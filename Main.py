@@ -1,4 +1,3 @@
-from pickle import FALSE, TRUE
 import random   
 from words import words
 
