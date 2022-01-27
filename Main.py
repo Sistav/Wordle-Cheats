@@ -16,13 +16,13 @@ class Letter:
         if self.in_word == False and (self.character in word):
             return False
         # Position Stuff
-        elif self.in_word and (self.character in word) and len(self.not_position) >=1 and ((word.index(self.character)+1 ) in self.not_position):
+        elif self.in_word and (self.character in word) and len(self.not_position) >=1 and ((word.index(self.character)+1) in self.not_position):
             return False
         # If the letter is supposed to be in the word but isn't
         elif self.in_word and not (self.character in word) and len(self.not_position):
             return False
         else:
-            return  True
+            return True
 
     # Check a word against all current letters
     def check(word):
