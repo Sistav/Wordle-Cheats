@@ -27,17 +27,6 @@ class Letter:
 
 def main():
     possible_words = []
-    Letter("m",True)
-    Letter("n",True)
-    Letter("a",False)
-    Letter("i",False)
-    Letter("e",False)
-    Letter("o",True,2)
-    Letter("w",False)
-    Letter("y",False)
-    Letter("u",True)
-    Letter("v",False)
-
     for i in range(len(words)):
         if Letter.check(words[i]):
             possible_words.append(words[i])
